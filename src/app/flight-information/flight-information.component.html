@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="text_wrapper">
+    <h2 class="left_text">Plane Number</h2>
+    <h2 class="right_text">{{flight?.plane}}</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="text_wrapper">
+    <h2 class="left_text">Duration</h2>
+    <h2 class="right_text">{{flight?.duration | translateDuration}}</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="text_wrapper">
+    <h2 class="left_text">Origin gate</h2>
+    <h2 class="right_text">{{flight?.from_gate}}</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="text_wrapper">
+    <h2 class="left_text">Destination gate</h2>
+    <h2 class="right_text">{{flight?.to_gate}}</h2>
+  </div>
+</div>

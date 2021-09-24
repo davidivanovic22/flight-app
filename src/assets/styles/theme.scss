@@ -1,0 +1,48 @@
+//@import '../../node_modules/@angular/material/theming';
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$mat-flight: (
+  50 : #cdd9e5,
+  100 : #bccddc,
+  200 : #9bb3ca,
+  300 : #466786,
+  400 : #354d64,
+  500 : #21303e,
+  600 : #1a2732,
+  700 : #1a2739,
+  800 : #1a2743,
+  900 : #1a2749,
+  A100 : #8aa7c1,
+  A200 : #4f7496,
+  A400 :#3e5a75,
+  A700 : #2c4054,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+
+// $app-primary: mat-palette($mat-red);
+// $app-accent:  mat-palette($mat-grey, A200, A100, A400);
+$app-primary: mat.define-palette($mat-flight);
+$app-accent:  mat.define-palette(mat.$gray-palette, A200, A100, A400);
+
+$app-warn: mat.define-palette($mat-flight);
+$app-theme: mat.define-light-theme($app-primary, $app-accent, $app-warn);
+
+@include mat.all-component-themes($app-theme);

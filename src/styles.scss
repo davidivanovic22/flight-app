@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+@import "src/assets/styles/theme";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* table section */
+
+
+/* .publicationAddButton {
+    margin-top: 10px !important;
+} */
+
+table {
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+thead {
+  background-color: #21303e !important;
+}
+
+.mat-header-cell {
+  background-color: #21303e !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+}
+
+mat-paginator {
+  font-size: 14px !important;
+  height: 10% !important;
+  color: #21303e !important;
+}
+
+.mat-sort-header-container {
+  justify-content: center;
+}
+
+.mat-sort-header-arrow {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+  color: white !important;
+}
+
+tr.mat-row:hover {
+  background: rgba(33, 48, 62, 0.4);
+  cursor: pointer;
+}
+
+
+/* ------------- */
+
+mat-list#menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  mat-list-item {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2em !important;
+
+
+    &:hover {
+      color: whitesmoke;
+      background-color: #2b45a5 !important;
+    }
+  }
+
+  mat-list-item.active {
+    color: whitesmoke;
+    background-color: #2b45a5 !important;
+  }
+
+}
+
+mat-list#menu {
+  text-align: center;
+}
+
